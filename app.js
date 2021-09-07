@@ -1,8 +1,10 @@
-let age=195866968745845;
-let name='asdrttg563546552879+6251146'
+const a=2
+const b=15
+let c=0
 
-let arr=[1,2,3,4,5]
-arr.push("value")
-arr.push("false")
-console.log(arr)
-console.log(typeof arr)
+console.log(a+b)  
+console.log(a-b)  
+console.log(a*b)  
+console.log(a/b)  
+console.log(a**b)  
+console.log(a%b)  
