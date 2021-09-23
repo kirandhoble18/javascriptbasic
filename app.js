@@ -1,13 +1,26 @@
-// const rock =document.querySelector('#rock')
-// const paper =document.querySelector('#paper')
-//const scissor =document.querySelector('#scissor')
+ const rock =document.querySelector('#rock')
+ const paper =document.querySelector('#paper')
+const scissor =document.querySelector('#scissor')
+const board =document.querySelector('#board')
 
-//function logName(Name="kiran dhoble",age=18){
-  //console.log("kiran")
-   //console.log(Name+  "  You are "+age)
-
-console.log(add(12,23))
-
-function add(a=0,b=0){
-return a+b
+const handler =(e) => {
+  const action =e.target.id
 }
+switch (action){
+  case "rock":
+   board.innerHTML=" rock crushes scissors"
+   break
+   case 'paper':
+    board.innerHTML=" paper traps rock"
+    break
+    case 'scissor':
+      board.innerHTML=" scissor cuts paper "
+      break
+      default:
+        board.innerHTML=" clicked something "
+        
+
+}
+rock.addEventListener('click',()=> { handler('rock')})
+paper.addEventListener('click',()=>{ handler('paper')})
+scissor.addEventListener('click',()=> { handler('scissor')})
